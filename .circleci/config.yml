@@ -278,7 +278,6 @@ workflows:
   release_production:
     jobs:
       - release_production:
-          context: binary-frontend-artifact-upload
           filters:
             branches:
               ignore: /.*/
@@ -288,7 +287,6 @@ workflows:
   release_production_dashboard:
     jobs:
       - release_production_dashboard:
-          context: binary-frontend-artifact-upload
           filters:
             branches:
               ignore: /.*/
